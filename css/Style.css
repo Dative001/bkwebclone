@@ -1,0 +1,41 @@
+ body{
+    padding: 0%;
+    margin: 0%;
+ }
+ .BK{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
+ }
+ .list{
+    color: blue;
+    display: flex;
+    font-size: 20px;
+    font-weight: 100;
+    list-style: none;
+ }
+ .list >li{
+    margin-left: 20px;
+ }
+.list_1{
+display: flex;
+font-size: 20px;
+font-weight: 100;
+list-style: none;
+color: blue;
+margin-right: 30px;
+}
+.list_1 >li{
+    margin-left: 20px;  
+}
+
+.list_1>:nth-child(1){
+ border-right: 1px solid green;
+ padding-right:10px ;
+}
+
+.list_1>:nth-child(2){
+    border-right: 1px solid green;
+    padding-right:10px ;
+   }

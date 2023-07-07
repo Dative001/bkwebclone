@@ -39,3 +39,86 @@ margin-right: 30px;
     border-right: 1px solid green;
     padding-right:10px ;
    }
+   .list_1>:nth-child(3){
+padding-left: 10px;
+   }
+   .list_1>:nth-child(4){
+      padding-left: 10px;
+         }
+   .Image{
+      background-color: blue;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 60px;
+      margin-top: 10px;
+      color: white;
+     
+   }
+   .image_bk{
+      margin-top: -110px;
+      height:280px ;
+      width: 250px;
+      margin-left: 30px;
+   }
+   .Icon{
+      margin-right: 60px; 
+      display: flex;
+      list-style: none;
+   }
+  .Icon>:nth-child(1){
+   padding: 10px;
+  }
+  .Icon>:nth-child(2){
+   padding: 10px;
+  }
+  .Icon>:nth-child(3){
+   padding: 10px;
+   border-right: 1px solid greenyellow;
+  }
+  .Icon>:nth-child(4){
+   padding: 10px;
+  }
+  .Icon>:nth-child(5){
+   margin-left: 5px;
+   font-size: 20px;
+   margin-top: 8px;
+  }
+  .Container{
+   background-color: darkblue;
+width: 100%;
+height: 50px;
+margin-top: -18px;
+  }
+  .list_2{
+   display: flex;
+   list-style: none;
+   color: white;
+   padding: 15px;
+  }
+  .list_2 >li{
+   margin-left: 30px;
+  }
+  .Display{
+   background-color: white;
+   width: 100%;
+   height: 150px;
+   display: flex;
+   margin: 50px;
+  }
+.Display_b{
+   margin-left: 70px;
+   font-size: 30px;
+   font-weight: 200;
+   color: darkblue;
+}
+  .Button{
+   margin-left: 20px;
+   background-color:cornflowerblue;
+   color: white;
+   margin-right: 200px;
+   text-decoration: none;
+  }
+  .Button >a {
+   text-decoration: none;
+  }

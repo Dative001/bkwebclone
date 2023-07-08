@@ -85,7 +85,7 @@ padding-left: 10px;
    margin-top: 8px;
   }
   .Container{
-   background-color: darkblue;
+   background-color: #0c4da2;
 width: 100%;
 height: 50px;
 margin-top: -18px;
@@ -102,15 +102,15 @@ margin-top: -18px;
   .Display{
    background-color: white;
    width: 100%;
-   height: 150px;
+   height: 280px;
    display: flex;
-   margin: 50px;
+  margin-left: 5px;
   }
 .Display_b{
    margin-left: 70px;
    font-size: 30px;
    font-weight: 200;
-   color: darkblue;
+   color: #0c4da2;
 }
   .Button{
    margin-left: 20px;
@@ -122,3 +122,51 @@ margin-top: -18px;
   .Button >a {
    text-decoration: none;
   }
+  .Menu{
+   background-color: white;
+   width: 100%;
+   height: 150px;
+   display: flex;
+  }
+  .bk_menu{
+   background-color: white;
+   border: 1px solid blue;
+   width: 250px;
+   height: 400px;
+  margin-left: 30px;
+  margin-top: 150px;
+  margin-right: 20px;
+  }
+  .service-header{
+   color: darkblue;
+   font-weight: 200px;
+   font-size: 20px;
+   margin-left: 30px;
+   margin-top: 90px;
+  }
+   .list_3{
+      list-style: none;
+      height: 90px;
+      width: 230px;
+     }
+  .Design{
+   background-color: #0c4da2;
+   height: 90px;
+   width: 230px;
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-top: -270px;
+  }
+  .Design >i{
+ margin: 20px 50px 40px 90px;
+   color: white;
+  }
+  .Design_2{
+   background-color: #0c4da2;
+   width: 20px;
+   height: 20px;
+   margin-top: -10px;
+   margin-left: 100px;
+   rotate: 45deg;
+  }
+  

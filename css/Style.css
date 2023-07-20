@@ -188,5 +188,46 @@ margin-top: -18px;
    margin-right: 570px;
    margin-left: 570px;
    border: 1px solid darkorange;
-
 }
+.menu-2{
+   width: 100%;
+   background-color: white;
+   height: 100px;
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+}
+.header-2{
+   margin-left: 80px;
+   color: #0c4da2;
+}
+.images{
+   margin-top: 10px;
+   height:100px ;
+   width: 100px;
+   margin-left: 80px;
+}
+.prag-2{
+margin-right: 200px;
+margin-left: 20px;
+   color: gray;
+padding-left: 30px;
+text-align: center;
+}
+.Button-1{
+   margin-left: 80px;
+   margin-right: 220px;
+   padding: 10px;
+   background-color:cornflowerblue;
+   color: white;
+  }
+  .Button-1>a {
+   text-decoration: none;
+  }
+
+  .vertical-line{
+   width: 1px;
+   height: 130px;
+   margin-top: 90px;
+   background-color: #0c4da2;
+  }

@@ -231,3 +231,80 @@ text-align: center;
    margin-top: 90px;
    background-color: #0c4da2;
   }
+  .our-contact{
+   background-color: rgb(233, 235, 239);
+   width: 100%;
+   height: 150px;
+margin-top: 230px;
+display: flex;
+justify-content: space-between;
+  }
+  .header-3{
+color: gray;
+margin-top: 10px;
+margin-left: 60px;
+  }
+.icons{
+   display: flex;
+   flex-direction: row;
+  }
+  .social-icon{
+   background-color: darkgrey;
+   height: 50px;
+   width: 50px;
+   margin-left: 50px;
+   margin-right: 5px;
+   padding: 2px;
+  }
+  .social-icon:nth-child(2){
+   margin-left: 2px;
+  }
+  .social-icon:nth-child(3){
+   margin-left: 2px;
+  }
+  .social-icon:nth-child(4){
+   margin-left: 2px;
+  }
+  .social-icon>i{
+   color: white;
+   margin: 15px;
+  }
+  .help-1{
+   background-color: white;
+   height: 50px;
+   width: 400px;
+   margin-left: 50px;
+   margin-right: 5px;
+   padding: 2px;
+  }
+  .help-2{
+   background-color: #0c4da2;
+   height: 50px;
+   width: 50px;
+   margin-left: 5px;
+   margin-right: 5px;
+   padding: 2px;
+  }
+  .help-1>i{
+   margin: 15px;
+  }
+  .help-2>i{
+   margin: 15px;
+  }
+  .header-4{
+   color: rgb(181, 181, 243);
+   margin-top: 10px;
+   margin-left: 70px;
+     }
+     .header-5{
+      color: rgb(181, 181, 243);
+      margin-top: 10px;
+      margin-left: 40px;
+      margin-right: 20px;
+        }
+        .header-4{
+         color: rgb(112, 112, 8);
+         margin-top: 10px;
+         margin-left: 40px;
+         margin-right: 20px;
+           }

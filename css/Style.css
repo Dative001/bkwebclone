@@ -137,6 +137,12 @@ margin-top: -18px;
   margin-top: 150px;
   margin-right: 30px;
   }
+
+  .bk_menu:hover {
+   border: 1px solid #e39614;
+   color: #e39614;
+  }
+  
   .service-header{
    color: darkblue;
    font-weight: 200px;
@@ -157,15 +163,20 @@ margin-top: -18px;
    margin-right: 10px;
    margin-top: -270px;
   }
+
+  .Design:hover{
+   background-color: #e39614;
+   cursor: pointer;
+  }
   .Design >i{
  margin: 20px 50px 40px 90px;
    color: white;
   }
   .Design_2{
-   background-color: #0c4da2;
+   background-color:inherit;
    width: 20px;
    height: 20px;
-   margin-top: -10px;
+   margin-top: 4px;
    margin-left: 100px;
    rotate: 45deg;
   }
@@ -422,8 +433,48 @@ flex-direction: row;
    border: 2px solid rgb(239, 149, 39);
    margin-top: 40px;
   }
-  table, th, td {
-   border-top: 1px solid white;
-   border-collapse: collapse;
- }
- 
+  .table{
+   margin: 5px;
+   padding: 5px;
+  border-collapse: collapse;
+  }
+  .table-header{
+   font-weight: 130px;
+   margin-left: 60px;
+ padding-left: 30px;
+ padding-bottom: 15px;
+  }
+  .usa-f{
+   width: 20px;
+   height: 20px;
+   margin-left: 40px;
+  }
+  #usd{
+  display: flex;
+  }
+  .usd-h{
+   margin-top: -0.5px;
+   margin-left: 3px;
+  }
+  .price-h{
+   margin-top: -0.5px;
+   margin-left: 30px;
+  }
+  .tr-table{
+  border-bottom: 1px solid white;
+  justify-items: center;
+  align-items: center;
+  }
+  .h-time{
+   margin-left: 70px;
+  }
+  .Button-2{
+   margin-left: 80px;
+   margin-right: 180px;
+   padding: 10px;
+   background-color:cornflowerblue;
+   color: white;
+  }
+  .Button-2>a {
+   text-decoration: none;
+  }

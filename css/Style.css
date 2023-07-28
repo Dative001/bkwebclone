@@ -6,50 +6,63 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
-
+    width: 100%;
+    height: 40px;
  }
  .list{
     color: blue;
     display: flex;
     font-size: 20px;
     font-weight: 100;
-    list-style: none;
  }
- .list >li{
-    margin-left: 20px;
+ .list_one>a:hover{
+   color: white;
+   background-color: #072e5e;
+}
+ .list_one{
+   padding: 10px;
+   margin-left: 30px;
+ }
+ .list_one>a{
+   padding: 10px;
+   margin-left: 10px;
+   text-decoration: none;
+   color: #0c4da2;
  }
 .list_1{
 display: flex;
 font-size: 20px;
 font-weight: 100;
-list-style: none;
 color: blue;
 margin-right: 30px;
 }
-.list_1:hover{
+.list_1>a{
+   padding: 10px;
+   margin-left: 10px;
+   margin-top: 5px;
+   text-decoration: none;
+   color: #0c4da2;
+   margin-right: 5px;
+ }
+ .list_1>i{
+   padding-top: 10px;
+   margin-left: 7px;
+   margin-top: 5px;
+   color: #0c4da2;
+ }
+ .list_1>a:hover{
    color: #e39614;
-}
-.list_1 >li{
-    margin-left: 20px;  
-}
-
-.list_1>:nth-child(1){
- border-right: 1px solid green;
- padding-right:10px ;
-}
-
-.list_1>:nth-child(2){
-    border-right: 1px solid green;
-    padding-right:10px ;
-   }
-   .list_1>:nth-child(3){
-padding-left: 10px;
-   }
-   .list_1>:nth-child(4){
-      padding-left: 10px;
-         }
+ }
+ .list_1>i:hover{
+   color: #e39614;
+ }
+ .vertical-1{
+   color: #ecb85f;
+   height: 30px;
+   margin-top: 15px;
+ }
    .Image{
-      background-color: blue;
+      background-color: #0c4da2;
       display: flex;
       justify-content: space-between;
       width: 100%;
@@ -59,7 +72,7 @@ padding-left: 10px;
      
    }
    .image_bk{
-      margin-top: -110px;
+      margin-top: -113.5px;
       height:280px ;
       width: 250px;
       margin-left: 30px;
@@ -88,7 +101,7 @@ padding-left: 10px;
    margin-top: 8px;
   }
   .Container{
-   background-color: #0c4da2;
+   background-color: #072e5e;
 width: 100%;
 height: 50px;
 margin-top: -18px;

@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script>
-            function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph is about to change.";
-}
-        </script>
-    </head>
     <body>
-        <h2>Demo JavaScript is in Head</h2>
+        <h2>Demo JavaScript for the statement</h2>
 
-<p id="demo">A Paragraph.</p>
-
-<button type="button" onclick="myFunction()">Try it</button>
+<p id="demo1"></p>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo0"></p>
+<p id="demo4"></p>
+<script>
+    let x,y,z;
+    x=5,
+    y=12,
+    z=x*y;
+    var a=10;
+    var b=28;
+    var c=b%a;
+    var e=++b;
+    var f=--c;
+    var d=e-f;
+    let m=20+ "BMW";
+    let n= 123e5;
+    let p= 123e-5;
+    let r= BigInt("123456789012345678901234567890");
+    const cars = ["Saab","Volvo","BMW"];
+    const person = {
+     firstName : "Tivah",
+     lastName  : "Ngina",
+     age     : 25,
+    height: 1.65,
+};
+document.getElementById("demo1").innerHTML = z;
+document.write(c);
+document.getElementById("demo").innerHTML = d +"<br>" + r;
+document.getElementById("demo2").innerHTML = m;
+document.getElementById("demo3").innerHTML = n + "<br>" + p;
+document.getElementById("demo0").innerHTML = cars[0];
+document.getElementById("demo4").innerHTML =
+person.firstName +" " + person.lastName +" is " + person.age + " years old.";
+</script>
     </body>
 </html>

@@ -6,17 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>JavaScript Functions</h1>
-<p>Using a function as a variable:</p>
-
-<p id="hello"></p>
+    <h1>JavaScript Iterables</h1>
+<h3>Using a function as a variable:</h3>
 <script>
-    let text = "The temperature is " + toCelsius(77) + " Celsius.";
-document.getElementById("hello").innerHTML = text;
-
-function toCelsius(fahrenheit) {
-  return (5/9) * (fahrenheit-32);
-} 
+{
+ document.write('Entering the loop!<br /> ');
+ for(i=0; i<=3; i++)
+ {
+    document.write('outterloop' + i + '<br/>');
+    for(j=0; j<5; j++)
+    {
+        if(j==3){
+   document.write('Innerloop: ' + j + '<br />');
+        }
+    }
+ }
+ document.write("Exiting the loop!<br /> ");
+}
 </script>
 </body>
 </html>

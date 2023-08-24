@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>JavaScript Iterables</h1>
-<h3>Using a function as a variable:</h3>
-<script>
-{
- document.write('Entering the loop!<br /> ');
- for(i=0; i<=3; i++)
- {
-    document.write('outterloop' + i + '<br/>');
-    for(j=0; j<5; j++)
-    {
-        if(j==3){
-   document.write('Innerloop: ' + j + '<br />');
+<html>
+   <body>
+    <h2>The javaScript that run objects</h2>
+    <p>Click the following button and see result</p>      
+    <form>
+       <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+    </form> 
+    <script type = "text/javascript">
+        function sayHello() {
+           alert("Hello World")
         }
-    }
- }
- document.write("Exiting the loop!<br /> ");
-}
-</script>
-</body>
+        var clothes = [];
+clothes.push('gray t-shirt');
+clothes.push('green skirt');
+clothes.push('yellow pant');
+clothes.push('red dress');
+clothes.push('black short');
+clothes.pop();
+clothes.push('white socks');
+document.write(clothes[2] + '<br/>' + clothes[4] + '<br/>');
+  </script>      
+   </body>
 </html>

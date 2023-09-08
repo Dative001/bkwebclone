@@ -1,6 +1,4 @@
-<html>
-    <body>
-        <script>
+
 // Task 1: Build a function-based console log message generator
 function consoleStyler(color, background, fontSize, txt) {
     var message = "%c" + txt;
@@ -78,9 +76,42 @@ function manager() {
     return manager;
 }
     console.log(manager());
-        </script>
-    </body>
-</html>
 
+    function logDairy() {
 
+        const logDairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake'];
+        for (let dairy of logDairy) {
+          console.log(`${dairy}`);
+        }
+      
+      }
+      logDairy();
+      // Task 2
+      const animal = {
+          canJump: true
+        };
+        const bird = Object.create(animal);
+        bird.canFly = true;
+        bird.hasFeathers = true;
+      
+      function birdCan() {
+        for (let value of Object.keys(bird)) {
+        
+          console.log(`${value}: ${bird[value]}`)
+          // Output Like 
+          // canFly: true
+          //hasFeathers: true
+          
+        }
+      }
+      birdCan();
+      
+      function animalCan() {
+      
+        for (let value in bird)
+       {     
+         console.log(`${value}: ${bird[value]}`);
+          }
+      }
+      animalCan();
 

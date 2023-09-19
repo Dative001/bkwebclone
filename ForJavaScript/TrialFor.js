@@ -114,4 +114,5 @@ function manager() {
           }
       }
       animalCan();
+      export default message;
 

@@ -17,11 +17,15 @@ const person={
     lastName:"Ngina",
     age:35,
     height: 170,
-
+fullName:function(){
+    return this.firstName + " " + this.lastName;
+}
 };
 const x=person;
 x.height=165;
+delete person.age;
 document.getElementById("demo").innerHTML = message();
+document.getElementById("demo1").innerHTML= person.fullName();
 document.getElementById("demo1").innerHTML= person.firstName  +" "  + "has" +" "  + person.height +" "  +"centemiter";
 document.getElementById("demo1").innerHTML = person["lastName"] +" " +"is" +" " +person["age"] +" " +"years old";
 let xp = "";

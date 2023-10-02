@@ -11,7 +11,6 @@
 <p id="demo4"></p>
 <p id="demo5"></p>
 <p id="demo6"></p>
-<p id="demo0"></p>
 <script type="module">
     import message from "./message.js";
     
@@ -37,23 +36,6 @@
      age     : 25,
     height: 1.65,
 };
-let xp = "";
-const myObj = {
-  name: "John",
-  age: 30,
-  cars: [
-    {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
-    {name:"BMW", models:["320", "X3", "X5"]},
-    {name:"Fiat", models:["500", "Panda"]}
-  ]
-}
-for (let i in myObj.cars) {
-  xp += "<h2>" + myObj.cars[i].name + "</h2>";
-  for (let j in myObj.cars[i].models) {
-    xp += myObj.cars[i].models[j] + "<br>";
-  }
-  document.getElementById("demo0").innerHTML = xp;
-}
 document.getElementById("demo1").innerHTML = z;
 document.write(c);
 document.getElementById("demo5").innerHTML = d +"<br>" + r;

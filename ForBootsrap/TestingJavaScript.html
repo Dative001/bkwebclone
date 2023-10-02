@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>JavaScript Objects</h2>
+<p id="demo"></p>
+<script>
+    const employee={
+        firstName:"Joshua",
+        lastName:"Mpore",
+        title: "Trainer",
+        id:3535,
+        status:"single",
+        fullId: function(){
+            return this.id + " " + this.title;
+        }
+
+    };
+    employee.fullName= function(){
+            return (this.firstName + " " + this.lastName).toUpperCase();
+        };
+        document.getElementById("demo").innerHTML= "Our employee title is" +" " + employee.fullId;
+    document.getElementById("demo").innerHTML= "Our good employee is" +" " + employee.fullName();
+</script>
+</body>
+</html>

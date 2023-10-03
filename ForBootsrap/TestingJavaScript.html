@@ -9,22 +9,24 @@
     
 <h2>JavaScript Objects</h2>
 <p id="demo"></p>
+<p id="demo0"></p>
 <script>
+    const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+document.getElementById("demo0").innerHTML = Object.values(person);
     const employee={
         firstName:"Joshua",
         lastName:"Mpore",
         title: "Trainer",
         id:3535,
         status:"single",
-        fullId: function(){
-            return this.id + " " + this.title;
-        }
-
     };
-    employee.fullName= function(){
+    employee.fullName = function(){
             return (this.firstName + " " + this.lastName).toUpperCase();
         };
-        document.getElementById("demo").innerHTML= "Our employee title is" +" " + employee.fullId;
     document.getElementById("demo").innerHTML= "Our good employee is" +" " + employee.fullName();
 </script>
 </body>

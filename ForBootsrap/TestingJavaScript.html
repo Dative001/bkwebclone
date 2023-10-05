@@ -13,7 +13,9 @@
 <p id="demo1"></p>
 <p id="demo2"></p>
 <p id="demo3"></p>
-<button type="button" onclick="myFunction()">Set text color</button>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
 <script>
     const person = {
   name: "John",
@@ -48,7 +50,6 @@ document.getElementById("demo0").innerHTML = Object.values(person);
     
     document.getElementById("demo2").innerHTML="My father's nationality is" +" " + myFather.nationality +" " + "his color is" + " " + myFather.color;
     document.getElementById("demo1").innerHTML= "My freind's name is"+ " " + myFreind.name();
-    document.getElementById("demo1").style.color="light green";
     let a1="";
     let a2=0;
     let a3=[];
@@ -64,6 +65,52 @@ document.getElementById("demo0").innerHTML = Object.values(person);
 "a5: " + typeof a5 + "<br>" +
 "a6: " + typeof a6 + "<br>" +
 "a7: " + typeof a7 + "<br>" +"</h3>";
+
+function myNumber(){
+    let n=10;
+    return{
+        next: function(){
+            n+=10;
+            return{value:n,done:true};
+
+        }
+    };
+}
+const n=myNumber();
+n.next(); // 10
+n.next(); // 20
+n.next(); // 30
+n.next();
+document.getElementById("demo4").innerHTML = n.next().value;
+
+const word="W3school";
+let m="";
+for(w of word){
+    m+= "<b>"  + w+ "<br>" +"</b>";
+}
+document.getElementById("demo5").innerHTML=m;
+
+myNumbers = {};
+
+// Make it Iterable
+myNumbers[Symbol.iterator] = function() {
+  let n = 0;
+  done = false;
+  return {
+    next() {
+      n += 10;
+      if (n == 100) {done = true}
+      return {value:n, done:done};
+    }
+  };
+}
+
+let text = ""
+for (const num of myNumbers) {
+  text += num +","
+}
+
+document.getElementById("demo6").innerHTML = text;
 </script>
 </body>
 </html>

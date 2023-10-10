@@ -11,6 +11,7 @@
     <p id="demo1"></p>
     <p id="demo"></p>
     <p id="demo2"></p>
+    <p id="demo3"></p>
     <script>
         function myFunction(a,b,c){
             return (a*b)^c;
@@ -53,6 +54,22 @@ const person2={
 }
 document.getElementById("demo2").innerHTML=person.fullName.call(person2) +" " + "and" +" " + person.fullName.call(person1)
 +" " + "are getting married!" ; 
+
+class House {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+
+  }
+  age() {
+    const date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+const myHouse  = new House ("Ford", 2010);
+document.getElementById("demo3").innerHTML =
+"My house is almost " + myHouse .age() + " years old.";
     </script>
 </body>
 </html>

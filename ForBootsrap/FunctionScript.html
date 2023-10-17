@@ -12,6 +12,7 @@
     <p id="demo"></p>
     <p id="demo2"></p>
     <p id="demo3"></p>
+    <p id="demo4"></p>
     <script>
         function myFunction(a,b,c){
             return (a*b)^c;
@@ -92,6 +93,22 @@ class Model extends Car {
 
 const myCar = new Model("Ford", "Mustang");
 document.getElementById("demo").innerHTML = myCar.show();
+
+class Bike {
+  constructor(brand) {
+    this._bikename = brand;
+  }
+  set bikename(x) {
+    this._bikename = x;
+  }
+  get bikename() {
+    return this._bikename;
+  }
+}
+
+const myBike = new Bike("Suzuki");
+myBike.bikename = "Yamaha";
+document.getElementById("demo4").innerHTML = myBike.bikename;
     </script>
 </body>
 </html>

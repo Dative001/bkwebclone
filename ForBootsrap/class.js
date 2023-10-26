@@ -45,3 +45,8 @@ class Wolf extends Dog {
 
 var result = new Wolf();
 console.log(result.makeNoise());
+function count(...food) {
+    console.log(food.length)
+}
+
+count("Burgers", "Fries", null);

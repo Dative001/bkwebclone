@@ -9,18 +9,21 @@
 <p class="Intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
 <p id="demo0"></p>
 <p id="demo1"></p>
+<p id="demo2">Hello word</p>
 
 <form id="frm1" action="/action_page.php">
   First name: <input type="text" name="fname" value="Donald"><br>
   Last name: <input type="text" name="lname" value="Duck"><br><br>
   <input type="submit" value="Submit">
 </form> 
-
+<h1 id="id01">The old heading</h1>
 <p>These are the values of each element in the form:</p>
 
 <p id="demo"></p>
 
 <script>
+    
+    a.innerHTML="New change for heading"
     const y=document.getElementsByTagName("p");
     const element=document.getElementsByClassName("Intro");
 const x = document.forms["frm1"];
@@ -31,7 +34,11 @@ for (let i = 0; i < x.length ;i++) {
 document.getElementById("demo").innerHTML = text;
 document.getElementById("demo0").innerHTML="The text of first paragaraph index(0) is:" + y[0].innerHTML;
 document.getElementById("demo1").innerHTML="The text of first class index(0)is:" + element[0].innerHTML;
+const a=document.getElementById("id01");
+document.getElementById("demo2").innerHTML="NewText!";
 </script>
+<p>JavaScript changed "The Old Heading" to "New change for Heading".</p>
+<p>The new paragraph for changing the HTML.</p>
 
 </body>
 </html>

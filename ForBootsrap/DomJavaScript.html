@@ -18,7 +18,7 @@
 </form> 
 <h1 id="id01">The old heading</h1>
 <p>These are the values of each element in the form:</p>
-
+<p id="demo3"></p>
 <p id="demo"></p>
 <img id="Image" src="tiger" width="160" height="120">
 <script>
@@ -37,6 +37,7 @@ document.getElementById("demo0").innerHTML="The text of first paragaraph index(0
 document.getElementById("demo1").innerHTML="The text of first class index(0)is:" + element[0].innerHTML;
 const a=document.getElementById("id01");
 document.getElementById("demo2").innerHTML="NewText!";
+document.getElementById("demo3").innerHTML="Today is:" + Date();
 </script>
 <p>JavaScript changed "The Old Heading" to "New change for Heading".</p>
 <p>The new paragraph for changing the HTML.</p>

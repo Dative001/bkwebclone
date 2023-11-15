@@ -8,7 +8,11 @@
 <body>
     <h2>The dom for displaying the date of day</h2>
     <p id="demo"></p>
-    <h2>JavaScript Validation</h2>
+<h1>Javascript Validation</h1>
+<p><b>Please enter the value between 1 and 10</b></p>
+<input id="num">
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="dimo"></p>
 
     <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
       Name: <input type="text" name="fname">
@@ -23,6 +27,18 @@
   }
 }
 document.getElementById("demo").innerHTML = "Date : " + Date();
+
+function myFunction(){
+let Z=document.getElementById("num").value;
+let txt;
+if(Z<1 ||Z>10){
+    txt="Input not valid";
+}
+else{
+    txt="Input is okay";
+}
+}
+document.getElementById("dimo").innerHTML=txt;
 </script>
 </body>
 </html>

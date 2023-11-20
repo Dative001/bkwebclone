@@ -15,6 +15,11 @@
           background: red;
         }
         </style>
+        <h2>JavaScript HTML Events</h2>
+        <p>Click "Try it" to execute the displayDate() function.</p>
+        <button id="myBtn">Try it</button>
+
+<p id="demo"></p>
         <body>
         
         <h2>My First JavaScript Animation</h2>
@@ -30,6 +35,11 @@
 <p id="p2">Hello World!</p>
 
 <script>
+  document.getElementById("myBtn").onclick = displayDate;
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
 document.getElementById("p2").style.color = "blue";
 document.getElementById("p2").style.fontFamily = "Arial";
 document.getElementById("p2").style.fontSize = "larger";

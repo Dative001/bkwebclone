@@ -33,6 +33,10 @@
 
 <p id="p1">CSS to change JavaScript!</p>
 <p id="p2">Hello World!</p>
+<p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button>
+
 
 <script>
   document.getElementById("myBtn").onclick = displayDate;
@@ -43,8 +47,11 @@ function displayDate() {
 document.getElementById("p2").style.color = "blue";
 document.getElementById("p2").style.fontFamily = "Arial";
 document.getElementById("p2").style.fontSize = "larger";
+function displayDate() {
+  document.getElementById("demo00").innerHTML = Date();
+}
 </script>
 
-
+<p id="demo0"></p>
 </body>
 </html>

@@ -1,57 +1,46 @@
 <!DOCTYPE html>
 <html>
+<style>
+#container {
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background: darkcyan;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
 <body>
-    <style>
-        #container {
-          width: 400px;
-          height: 400px;
-          position: relative;
-          background: yellow;
-        }
-        #animate {
-          width: 50px;
-          height: 50px;
-          position: absolute;
-          background: red;
-        }
-        </style>
-        <h2>JavaScript HTML Events</h2>
-        <p>Click "Try it" to execute the displayDate() function.</p>
-        <button id="myBtn">Try it</button>
 
-<p id="demo"></p>
-        <body>
-        
-        <h2>My First JavaScript Animation</h2>
-        
-        <div id="container">
-        <div id="animate"></div>
-        </div>
-<h2>JavaScript HTML DOM</h2>
-<p>Changing the HTML style:</p>
+<p><button onclick="myMove()">Click Me</button></p> 
 
-
-<p id="p1">CSS to change JavaScript!</p>
-<p id="p2">Hello World!</p>
-<p>Click the button to display the date.</p>
-
-<button onclick="displayDate()">The time is?</button>
-
+<div id ="container">
+  <div id ="animate"></div>
+</div>
 
 <script>
-  document.getElementById("myBtn").onclick = displayDate;
-
-function displayDate() {
-  document.getElementById("demo").innerHTML = Date();
-}
-document.getElementById("p2").style.color = "blue";
-document.getElementById("p2").style.fontFamily = "Arial";
-document.getElementById("p2").style.fontSize = "larger";
-function displayDate() {
-  document.getElementById("demo00").innerHTML = Date();
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 250) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
 }
 </script>
 
-<p id="demo0"></p>
 </body>
 </html>

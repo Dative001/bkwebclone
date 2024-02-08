@@ -1,51 +1,45 @@
-const ComputerChoiceDisplay= document.getElementById("Computer-choice")
-const UserChoiceDisplay= document.getElementById("User-choice")
-const ResultDisplay= document.getElementById("Result")
-const PossibleChoices= document.querySelectorAll("button")
-let UserChoice
-let ComputerChoice
-let Result
+const playerText= document.querySelector("#playerText");
+const computerText= document.querySelector("#computerText");
+const resultText= document.querySelector("#resultText");
+const choiceBtn= document.querySelectorAll(".choiceBtn")
+let player;
+let computer;
+let result;
 
-PossibleChoices.forEach(PossibleChoice=> PossibleChoice.addEventListener("click",(e)=> {
-    UserChoice=e.target.id
-    UserChoiceDisplay.innerHTML=UserChoice
-    generateComputerChoice()
-    getResult()
-}))
-function generateComputerChoice(){
-    const randomNumber= Math.floor(Math.random()*PossibleChoices.length)+1 //all use*3 
-    if(randomNumber==1){
-        ComputerChoice='rock'
-    }
- if(randomNumber==2){
-        ComputerChoice='paper'
-    }
-if(randomNumber==3){
-    ComputerChoice='scissor'
-}
-ResultDisplay.innerHTML=Result
-}
-function getResult(){
-    if(ComputerChoice==UserChoice){
-        Result='its a draw'
-    }
-    if(ComputerChoice== 'rock'&& UserChoice=='paper'){
-        Result='you win'
-    }
-    if(ComputerChoice== 'rock'&& UserChoice=='scissors'){
-        Result='you loose'
-    }
-    if(ComputerChoice== 'paper'&& UserChoice=='rock'){
-        Result='you loose'
-    }
-    if(ComputerChoice== 'paper'&& UserChoice=='scissors'){
-        Result='you win'
-    }
-if(ComputerChoice== 'scissors'&& UserChoice=='rock'){
-    Result='you win'
-}
-if(ComputerChoice== 'scissors'&& UserChoice=='paper'){
-    Result='you loose'
-}
+choiceBtn.forEach(button => button.addEventListener("click",() =>{
+    player=button.textContent;
+ computerChoice();
+    player.textContent= 'player:${player}';
+   computer.textContent= 'computer:${computer}';
+   result.textContent= checkWinner();
+}));
+function ComputerChoice(){
 
-}
+    const randomNumber= Math.floor(Math.random()*3)+1 
+ switch(randomNumber){
+  case 1: 
+  computer="Rock";
+  break;
+  case 2:
+    computer="Paper";
+    break;
+    case 3:
+        computer="Scissors";
+        break;
+ }
+}  
+function checkWinner(){
+    if(player== computer){
+        return"draw!";
+    }
+    else if( computer=="Rock"){
+        return (player=="Paper")? "You win!": "You lose!"
+    }
+
+    else if( computer=="Paper"){
+        return (player=="Scissors")? "You win!": "You lose!"
+    }
+    else if( computer=="Scissors"){
+        return (player=="Rock")? "You win!": "You lose!"
+    }
+  }
